@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="C:\Users\Daria_Grishenkova\.nuget\packages\microsoft.testplatform.testhost\17.3.2\build\netcoreapp2.1\x64\testhost.dll" />
+    <Content Remove="C:\Users\Daria_Grishenkova\.nuget\packages\microsoft.testplatform.testhost\17.3.2\build\netcoreapp2.1\x64\testhost.exe" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="C:\Users\Daria_Grishenkova\.nuget\packages\nunit3testadapter\4.3.0\build\netcoreapp2.1\nunit.engine.api.dll" />
+    <None Remove="C:\Users\Daria_Grishenkova\.nuget\packages\nunit3testadapter\4.3.0\build\netcoreapp2.1\nunit.engine.core.dll" />
+    <None Remove="C:\Users\Daria_Grishenkova\.nuget\packages\nunit3testadapter\4.3.0\build\netcoreapp2.1\nunit.engine.dll" />
+    <None Remove="C:\Users\Daria_Grishenkova\.nuget\packages\nunit3testadapter\4.3.0\build\netcoreapp2.1\NUnit3.TestAdapter.dll" />
+    <None Remove="C:\Users\Daria_Grishenkova\.nuget\packages\nunit3testadapter\4.3.0\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" />
+    <None Remove="C:\Users\Daria_Grishenkova\.nuget\packages\nunit3testadapter\4.3.0\build\netcoreapp2.1\testcentric.engine.metadata.dll" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.3.0" />
+    <PackageReference Include="NUnit.Analyzers" Version="3.5.0" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Training_Tasks\Training_Tasks.csproj" />
+  </ItemGroup>
+
+</Project>
